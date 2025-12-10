@@ -1,22 +1,39 @@
 .h1-game-press-right-key {
-    color:rgb(77, 52, 18);
+  color: rgb(77, 52, 18);
   display: flex;
   justify-content: center;
-  font-family:Comic Sans MS, Comic Sans, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: 500;
   text-shadow: 10px 10px 10px rgb(87, 30, 30);
 }
-.key-back{
-    width: 300px;
-    height: 250px;
-    background-color: rgb(64, 32, 32);
-    border-radius: 10px;
-    border: 7px solid rgb(243, 243, 158);
-    margin-top: 200px;
-    margin-left: 500px;
+.key-back {
+
+  width: 300px;
+  height: 250px;
+  background-color: rgb(64, 32, 32);
+  border-radius: 10px;
+  border: 7px solid rgb(243, 243, 158);
+ margin-left: 480px;
 }
-.key-back:hover{
-    box-shadow: 0px 0px 8px 10px rgb(99, 99, 60);
-    transition: box-shadow 0.2s;
-    
+.key-back:hover {
+  box-shadow: 0px 0px 8px 10px rgb(99, 99, 60);
+  transition: box-shadow 0.2s;
+}
+.state {
+
+  width: 300px;
+  height: 250px;
+  background-color: rgb(64, 32, 32);
+  border-radius: 10px;
+  border: 7px solid rgb(243, 243, 158);
+
+  margin-left: 1100px;
+}
+.state:hover {
+  box-shadow: 0px 0px 8px 10px rgb(99, 99, 60);
+  transition: box-shadow 0.2s;
+}
+.keys-container{
+  position: absolute;
+ top: 250px;
 }
