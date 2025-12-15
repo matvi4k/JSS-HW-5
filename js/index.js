@@ -4,13 +4,15 @@ const btnEl = document.querySelector(".js-start-game");
 
 const keys = ["k", "u", "f", "h", "j", "d", "x", "q", "e", "y"];
 
-let currentKeyIndex = -1;
-
+let currentKeyIndex = 0;
 // ФУНКЦІЇ
 
 function startNewGame() {
   currentKeyIndex = Math.floor(Math.random() * keys.length);
+  currentKeyIndex = 0;
   keyEL.textContent = `Натисни клавішу: ${keys[currentKeyIndex]}`;
+  stateEL.textContent = 'Гра почалася!';
+
   alert("Розпочалася нова гра");
   keyEL.style.marginLeft = '550px'
 
@@ -27,7 +29,6 @@ function onKeydownPress(event) {
     if(currentKeyIndex === keys.length){
         stateEL.textContent = 'Гру завершино'
         btnEl.disabled = false;
-        currentKeyIndex = -1;
         return
     }
 
