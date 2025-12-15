@@ -20,12 +20,17 @@
   transition: box-shadow 0.2s;
 }
 .state {
-
-  width: 300px;
-  height: 250px;
+  position: absolute;
+padding-top: 100px;
+padding-left: 30px;
+  width: 270px;
+  height: 150px;
   background-color: rgb(64, 32, 32);
   border-radius: 10px;
   border: 7px solid rgb(243, 243, 158);
+  color: white;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 500;
 
   margin-left: 1100px;
 }
@@ -36,4 +41,21 @@
 .keys-container{
   position: absolute;
  top: 250px;
+}
+.key{
+  color: white;
+  position: absolute;
+ top: 370px;
+ margin-left: 525px;
+ font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 500;
+}
+.js-start-game{
+position: absolute;
+top: 580px;
+left: 910px;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
