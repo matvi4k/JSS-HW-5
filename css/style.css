@@ -7,13 +7,17 @@
   text-shadow: 10px 10px 10px rgb(87, 30, 30);
 }
 .key-back {
-
-  width: 300px;
-  height: 250px;
+  width: 270px;
+  height: 150px;
   background-color: rgb(64, 32, 32);
   border-radius: 10px;
   border: 7px solid rgb(243, 243, 158);
- margin-left: 480px;
+  margin-left: 480px;
+  color: white;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 500;
+  padding-top: 100px;
+  padding-left: 30px;
 }
 .key-back:hover {
   box-shadow: 0px 0px 8px 10px rgb(99, 99, 60);
@@ -21,8 +25,8 @@
 }
 .state {
   position: absolute;
-padding-top: 100px;
-padding-left: 30px;
+  padding-top: 100px;
+  padding-left: 30px;
   width: 270px;
   height: 150px;
   background-color: rgb(64, 32, 32);
@@ -31,29 +35,20 @@ padding-left: 30px;
   color: white;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: 500;
-
   margin-left: 1100px;
 }
 .state:hover {
   box-shadow: 0px 0px 8px 10px rgb(99, 99, 60);
   transition: box-shadow 0.2s;
 }
-.keys-container{
+.keys-container {
   position: absolute;
- top: 250px;
+  top: 250px;
 }
-.key{
-  color: white;
+.js-start-game {
   position: absolute;
- top: 370px;
- margin-left: 525px;
- font-family: Comic Sans MS, Comic Sans, cursive;
-  font-weight: 500;
-}
-.js-start-game{
-position: absolute;
-top: 580px;
-left: 910px;
+  top: 580px;
+  left: 910px;
 }
 button:disabled {
   opacity: 0.5;
