@@ -3,6 +3,7 @@ const stateEL = document.querySelector(".state");
 const btnEl = document.querySelector(".js-start-game");
 
 const keys = ["k", "u", "f", "h", "j", "d", "x", "q", "e", "y"];
+const { alert, notice, success, error } = PNotify;
 
 let currentKeyIndex = 0;
 let gameStarted = false;
@@ -14,8 +15,13 @@ function startNewGame() {
   gameStarted = true;
 
   keyEL.textContent = `Натисни клавішу: ${keys[currentKeyIndex]}`;
-  stateEL.textContent = 'Гра почалася!';
+  stateEL.textContent = "Гра почалася!";
   btnEl.disabled = true;
+
+  notice({
+    text: "🎮 Нова гра почалася!",
+    delay: 1500,
+  });
 }
 
 function onKeydownPress(event) {
@@ -32,13 +38,27 @@ function onKeydownPress(event) {
       Ти пройшов гру!`;
       btnEl.disabled = false;
       gameStarted = false;
+      alert({
+        text: "🏆 Вітаю! Ти пройшов гру!",
+        delay: 2000,
+      });
+
       return;
     }
 
     keyEL.textContent = `Натисни клавішу: ${keys[currentKeyIndex]}`;
     stateEL.textContent = `Правильно! ${currentKeyIndex}/10`;
+    success({
+      text: "✅ Правильно!",
+      delay: 800,
+    });
   } else {
     stateEL.textContent = `Неправильно! Натисни клавішу ${keys[currentKeyIndex]}`;
+    error({
+      text: `❌ Неправильно! Натисни "${currentKey}"`,
+      delay: 1000,
+      
+    });
   }
 }
 

@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Натисни правильну клавішу</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@pnotify/core/dist/PNotify.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@pnotify/core/dist/BrightTheme.css"
+    />
+  </head>
+  <body>
     <h1 class="h1-game-press-right-key">Гра натисни правильну клавішу</h1>
 
-    <div id="key" class="key-back keys-container">Натисни кнопку 'Почати гру'</div>
+    <div id="key" class="key-back keys-container">
+      Натисни кнопку 'Почати гру'
+    </div>
     <div class="state keys-container">Очікую початку гри...</div>
-<button class="js-start-game">Почати гру</button>
+    <button class="js-start-game">Почати гру</button>
 
     <script src="./js/index.js" type="module"></script>
-</body>
+    <script src="https://unpkg.com/@pnotify/core/dist/PNotify.js"></script>
+  </body>
 </html>
