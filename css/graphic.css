@@ -1,0 +1,17 @@
+.section-2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+margin-top: 600px;
+}
+.sales-last-month{
+  color: rgb(77, 52, 18);
+  text-shadow: 10px 10px 10px rgb(87, 30, 30);
+
+    display: flex;
+    justify-content: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 500;
+
+}

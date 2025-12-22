@@ -1,3 +1,10 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
 .h1-game-press-right-key {
   color: rgb(77, 52, 18);
   display: flex;

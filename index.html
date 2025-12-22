@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Натисни правильну клавішу</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/graphic.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/@pnotify/core/dist/PNotify.css"
@@ -15,6 +16,7 @@
     />
   </head>
   <body>
+    <div class="section-1">
     <h1 class="h1-game-press-right-key">Гра натисни правильну клавішу</h1>
 
     <div id="key" class="key-back keys-container">
@@ -22,8 +24,18 @@
     </div>
     <div class="state keys-container">Очікую початку гри...</div>
     <button class="js-start-game">Почати гру</button>
+    </div>
+    <div class="section-2">
+      <h1 class="sales-last-month ">Продажі за останній місяць</h1>
+     
+      <canvas id="sales-chart"></canvas>
 
-    <script src="./js/index.js" type="module"></script>
-    <script src="https://unpkg.com/@pnotify/core/dist/PNotify.js"></script>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/@pnotify/core/dist/PNotify.js"></script>
+
+<script src="./js/index.js" type="module"></script>
+<script src="./js/graphic.js" type="module"></script>
   </body>
 </html>
